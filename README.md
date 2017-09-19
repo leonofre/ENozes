@@ -1,6 +1,6 @@
 # The Pixel Death #
 
-The Pixel Death é o mais novo game para Android.
+Projeto Final do bloco de Android, Turma GADS-Manhã-2, com o objetivo de criar um jogo no estilo plataforma.
 
  - Descrição curta ....
  - Version 0.0.1
