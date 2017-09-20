@@ -9,7 +9,7 @@ Projeto Final do bloco de Android, Turma GADS-Manhã-2, com o objetivo de criar 
 
  - bigode98
  - carloshumberto
- - jessiica98
+ - jessiicasantos
  - leonofre
  - meiii15
  - ramulo
