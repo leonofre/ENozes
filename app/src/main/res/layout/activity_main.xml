@@ -63,6 +63,7 @@
             android:elevation="1dp"
             android:fontFamily="sans-serif"
             android:text="Toque para iniciar"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:typeface="normal"
             tools:ignore="HardcodedText" />
@@ -85,6 +86,7 @@
             android:layout_alignStart="@+id/imageView2"
             android:text="Desenvolvido por"
             android:textAlignment="center"
+            android:textColor="#FFFFFF"
             android:textSize="12sp"
             tools:ignore="HardcodedText,SmallSp" />
 
