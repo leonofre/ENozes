@@ -30,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                vibe.vibrate(100);
+                Funcionalidades.vibe(50, getApplicationContext() );
                 System.exit(0);
             }
         };
@@ -42,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
         OnClickListener config = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                vibe.vibrate(100);
+                Funcionalidades.vibe(50, getApplicationContext() );
                 Intent config = new Intent(getBaseContext(), ConfigActivity.class);
                 config.putExtra( "Config", 2 );
                 startActivity(config);
