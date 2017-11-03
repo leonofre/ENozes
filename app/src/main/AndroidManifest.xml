@@ -3,6 +3,7 @@
     package="controlf13.enozes">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <application
         android:allowBackup="true"
