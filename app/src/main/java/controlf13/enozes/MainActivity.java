@@ -1,16 +1,17 @@
 package controlf13.enozes;
 
 import android.content.Context;
+import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
+
     private OnClickListener exit = new OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -39,6 +42,27 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton btnConfig = (ImageButton) findViewById(R.id.btnConfig);
         btnConfig.setOnClickListener( this.config );
+
+        final MediaPlayer originalSoundMP = MediaPlayer.create(this, R.raw.original);
+
+        btnVoltar = (ImageButton) this.findViewById(R.id.btnVoltar);
+        btnConfig = (ImageButton) this.findViewById(R.id.btnConfig);
+
+
+        btnConfig.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                originalSoundMP.start();
+            }
+
+        });
+        btnVoltar.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                originalSoundMP.start();
+            }});
     }
+
+
 
 }
